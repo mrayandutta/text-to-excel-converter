@@ -47,11 +47,11 @@ public class TextReader {
 		{  
 			String line = sc.nextLine();
 			List<String> rowDataList = new ArrayList<String>();
-			System.out.println("line:"+line);
+			//System.out.println("line:"+line);
 			for(LineSplitInfo splitInfo:splitInfoList)
 			{
 				String data = line.substring(splitInfo.getStart(),splitInfo.getEnd());
-				System.out.println(data);
+				//System.out.println(data);
 				rowDataList.add(data);
 			}
 			allRowDataList.add(rowDataList);
